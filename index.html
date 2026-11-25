@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border" id="addrBtn">
+                <p class="add-first">Delivery to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec" id="cityText">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select" id="searchSelect">
+                    <option value="all">All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input" id="searchInput" list="sugg" autocomplete="off">
+                <datalist id="sugg"></datalist>
+                <div class="search-icon" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+
+            <div class="nav-signin border" id="signinBtn">
+                <p><span id="helloText">Hello, Sign in </span></p>
+                <p class="nav-sec">Account & Lists</p>
+            </div>
+
+            <div class="nav-return border" id="ordersBtn">
+                <p><span>Returns </span></p>
+                <p class="nav-sec">& Orders</p>
+            </div>
+
+            <div class="new-cart border" id="cartBtn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span> Cart
+            </div>
+        </div>
+        <div class="pannel">
+            <div class="pannel-all" data-nav="all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="pannel-ops">
+                <p data-nav="deals">Today Deals</p>
+                <p data-nav="wish">Wishlist</p>
+                <p data-nav="gift">Gift Cards</p>
+                <p data-nav="sell">Sell</p>
+                <p data-nav="help">Customer Service</p>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="sec-1">
+        <div class="container10">
+            <div class="slider">
+                <div class="image-box">
+                    <div class="slide">
+                        <img src="picture/hero-section.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="picture/box-3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="picture/mens-fashion.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="picture/electronics.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="picture/beauty.png" alt="Beauty and skincare under 299">
+                    </div>
+                    <div class="slide">
+                        <img src="picture/footwear.png" alt="Sneakers and sandals under 699">
+                    </div>
+                </div>
+                <button class="arrow prev" id="prevBtn" aria-label="Previous slide">&#10094;</button>
+                <button class="arrow next" id="nextBtn" aria-label="Next slide">&#10095;</button>
+                <div class="dots" id="dots"></div>
+            </div>
+        </div>
+        <!-- <div class="hero-section"> -->
+        <div class="hero-sms">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+                delivery. <a href="#"> Click here to go to amazon.in</a></p>
+        </div>
+    </section>
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <div class="box1 box">
+                    <h2>Health & Personal Care</h2>
+                    <div class="box-img" style="background-image:url('picture/box1-imahe.webp') ;"></div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <div class="box1 box">
+                    <h2>Get your game set on</h2>
+                    <div class="box-img" style="background-image:url('picture/box-2.jpg') ;"></div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <div class="box1 box">
+                    <h2>New home arrivals under</h2>
+                    <div class="box-img" style="background-image:url('picture/box-3.jpg') ;"></div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <div class="box1 box">
+                    <h2>Fashion trends you like</h2>
+                    <div class="box-img" style="background-image:url('picture/box4.jpg') ;"></div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+        <div class="box5 box">
+            <div class="box-content">
+                <div class="box1 box">
+                    <h2>Level up your beauty routine</h2>
+                    <div class="box-img"
+                        style="background-image:url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Make-up._SY116_CB558654384_.jpg') ;">
+                    </div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+        <div class="box6 box">
+            <div class="box-content">
+                <div class="box1 box">
+                    <h2>Must-haves for every student</h2>
+                    <div class="box-img"
+                        style="background-image:url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/BTS2026/Fuji_SingleImageCard_BTS_SH26_1x._SY304_CB788455970_.jpg') ;">
+                    </div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+        <div class="box7 box">
+            <div class="box-content">
+                <div class="box1 box">
+                    <h2>Must-have school supplies</h2>
+                    <div class="box-img"
+                        style="background-image:url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/BTS25/GenAIExperiment/Group_C/Fuji_QuadCard_Bag_BTS25_1x._SY116_CB789327598_.jpg') ;">
+                    </div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+        <div class="box8 box">
+            <div class="box-content">
+                <div class="box1 box">
+                    <h2>Earbuds And Earphone</h2>
+                    <div class="box-img"
+                        style="background-image:url('https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/5e0ae989face7e64.jpg?q=60') ;">
+                    </div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+        <div class="box9 box">
+            <div class="box-content">
+                <div class="box1 box">
+                    <h2>Game Accessories</h2>
+                    <div class="box-img"
+                        style="background-image:url('https://m.media-amazon.com/images/I/41HgIPr9ajL._SR210,210_.jpg') ;">
+                    </div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+        <div class="box10 box">
+            <div class="box-content">
+                <div class="box1 box">
+                    <h2>Game Accessories</h2>
+                    <div class="box-img"
+                        style="background-image:url('https://m.media-amazon.com/images/I/41DNYos4L1L._SR210,210_.jpg') ;">
+                    </div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-panel1" id="toTop">
+            Back to top
+        </div>
+        <div class="footer-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a data-foot>Careers</a>
+                <a data-foot>Blog</a>
+                <a data-foot>About Amazon</a>
+                <a data-foot>Investor Relations</a>
+                <a data-foot>Amazon Devices</a>
+                <a data-foot>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a data-foot>Sell products</a>
+                <a data-foot>Become an Affiliate</a>
+                <a data-foot>Advertise Your Products</a>
+                <a data-foot>Self-Publish with Us</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a data-foot>Business Card</a>
+                <a data-foot>Shop with Points</a>
+                <a data-foot>Reload Your Balance</a>
+                <a data-foot>Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a data-foot>Your Account</a>
+                <a data-foot>Your Orders</a>
+                <a data-foot>Returns & Replacements</a>
+                <a data-foot>Help</a>
+            </ul>
+        </div>
+        <div class="footer-panel3">
+            <div class="logo"></div>
+        </div>
+    </footer>
+    <div class="footer-panel4">
+        <div class="pages">
+            <a>Condition of use</a>
+            <a>Privacy notice</a>
+            <a>Your ads privacy choices</a>
+        </div>
+        <div class="copyright">
+            © 1996-2026, Amazon.com, Inc. or its affiliates
+        </div>
+    </div>
+
+
+
+    <div id="overlay"></div>
+    <aside id="drawer" aria-label="Shopping cart">
+        <div class="d-head">
+            <h3>Shopping Cart</h3><button data-act="closeAll" aria-label="Close">&times;</button>
+        </div>
+        <div id="cartItems"></div>
+        <div class="d-foot">
+            <div class="coupon"><input id="couponInput" placeholder="Coupon code (try SAVE10)"><button
+                    data-act="coupon">Apply</button></div>
+            <p>Subtotal: <b id="cartSub">₹0</b></p>
+            <p id="discLine"></p>
+            <p>Total: <b id="cartTotal">₹0</b></p><button class="btn" data-act="checkout">Proceed to Buy</button>
+        </div>
+    </aside>
+    <div id="modal" role="dialog">
+        <div class="m-head">
+            <h3 id="modalTitle"></h3><button data-act="closeAll" aria-label="Close">&times;</button>
+        </div>
+        <div id="modalBody"></div>
+    </div>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
